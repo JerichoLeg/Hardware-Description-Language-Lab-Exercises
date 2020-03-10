@@ -28,7 +28,6 @@ module testbench2_3;
     end
 	
     initial begin
-        $display(" a b borrowIn difference borrowOut time");
         $monitor("%b %b %b %b %b %d", a, b, borrowIn, diff, borrowOut, $time);
         #10 `STOP;
     end
